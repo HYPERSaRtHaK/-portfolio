@@ -57,9 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
       )
     `);
   });
-
   // Reset glow when mouse leaves
   signButton.addEventListener("mouseleave", () => {
     sign.style.setProperty("--sign-glow", "white");
   });
+});
+window.addEventListener('load', () => {
+  document.querySelector('.loader-container').style.display = 'none';
 });
